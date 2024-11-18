@@ -1,0 +1,78 @@
+.main-content {
+    display: flex;
+    flex-direction: row; /* Alinea texto e imagen en fila en pantallas grandes */
+    align-items: center;
+    justify-content: space-between; 
+    padding: 120px 50px 50px; 
+    background-color: #000; /* Fondo negro */
+    color: #8FE3FF; /* Texto celeste */
+    gap: 30px; 
+    box-sizing: border-box;
+    min-height: calc(100vh - 80px); /* Asegura que ocupe toda la pantalla menos el header */
+    overflow: hidden; /* Evita desbordamientos horizontales */
+  }
+  
+  .text-container {
+    flex: 1;
+    max-width: 60%; /* Limitar el ancho en pantallas grandes */
+    word-wrap: break-word; /* Evitar que palabras largas corten el diseño */
+    overflow: hidden; /* Evita que el texto se salga del contenedor */
+  }
+  
+  .text-container h4 {
+    font-size: 24px;
+    color: #8FE3FF; 
+    margin-bottom: 10px;
+  }
+  
+  .text-container p, .text-container ul {
+    font-size: 16px;
+    line-height: 1.8; /* Mejor legibilidad */
+    margin-bottom: 20px;
+    color: #8FE3FF; 
+  }
+  
+  .text-container ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .text-container ul li {
+    margin-bottom: 10px;
+  }
+  
+  .images {
+    flex-shrink: 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%; /* Mantén la imagen en un ancho relativo */
+  }
+  
+  .images img {
+    width: 100%; 
+    max-width: 350px; /* Tamaño máximo constante */
+    height: auto; 
+    margin: auto 0; 
+  }
+  
+  @media (max-width: 768px) {
+    .main-content {
+      flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+      padding: 100px 20px; /* Menos padding en móviles */
+    }
+  
+    .text-container {
+      max-width: 100%; /* Texto ocupa todo el ancho disponible en móviles */
+    }
+  
+    .images {
+      width: 100%; /* Imagen ocupa el ancho completo */
+      margin-top: 20px; 
+    }
+  
+    .images img {
+      max-width: 100%; /* Imagen responsiva en móviles */
+    }
+  }
+  

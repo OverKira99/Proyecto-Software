@@ -1,0 +1,50 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #000; /* Fondo negro */
+    color: #8FE3FF; /* Texto celeste */
+    border-bottom: 2px solid #8FE3FF; /* Línea divisoria celeste */
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed; /* Fijo en la parte superior */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logo img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .logo h1 {
+    font-size: 24px;
+    margin: 0;
+    color: #8FE3FF; /* Texto celeste */
+  }
+  
+  .login-button {
+    background-color: #8FE3FF; /* Fondo celeste */
+    color: #000; /* Texto negro */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .login-button:hover {
+    background-color: #ffffff; /* Blanco al hover */
+    color: #000; /* Texto negro */
+  }
+  
